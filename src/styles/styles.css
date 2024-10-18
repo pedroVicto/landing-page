@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 body {
-    background-color: black;
+        background-color: #090130;
+}
+
+#mobile_menu {
+    display: none;
 }

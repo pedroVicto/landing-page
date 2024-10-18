@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    padding: 30px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#nav_list {    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-item:hover {
+    color: #6c7979;
+}
