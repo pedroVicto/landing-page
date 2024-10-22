@@ -1,6 +1,9 @@
 header {
     width: 100%;
     padding: 30px 8%;
+    background: rgb(34,211,233);
+    background: linear-gradient(90deg, rgba(34,211,233,1) 2%, rgba(71,8,231,1) 61%);
+
 }
 
 #navbar {
@@ -9,12 +12,15 @@ header {
     justify-content: space-between;
     align-items: center;
 
+
 }
 
 #nav_list {    
     display: flex;
     list-style: none;
     gap: 48px;
+    font-size: 1.2rem;
+
 }
 
 .nav-item {
@@ -25,4 +31,53 @@ header {
 
 .nav-item:hover {
     color: #6c7979;
+}
+.mobile_nav-item {
+    list-style: none;
+}
+
+#mobile-btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1170px) {
+    #nav_list {
+        display: none;
+    }
+
+    #mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_nav_list {
+        display: none;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile_nav-item {
+        text-align: center;
+    }
 }

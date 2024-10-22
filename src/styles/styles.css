@@ -6,10 +6,14 @@
     color: #fff;
 }
 
-body {
-        background-color: #090130;
+section {
+    padding: 28px 8%;
 }
 
-#mobile_menu {
-    display: none;
+body {
+    background-color: #090130;
+}
+
+.btn-default {
+    color: #1d1d1dad;
 }

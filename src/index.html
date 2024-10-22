@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="./styles/home.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Almy Protein</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
-                <i class="fa-solid fa-dumbbell" class="nav_logo">protein</i>
+                <img src="images/logo.png" alt="logo Almy protein" width="170" height="100">
 
             <ul id="nav_list">
                 <li class="nav-item">
@@ -38,35 +42,50 @@
                 </li>
             </ul>
 
-            <button>
+            <button id="mobile-btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
-            <div id="mobile_menu">
-                <ul id="mobile_nav_list">
-                    <li class="mobile_nav-item">
-                        <a class="nav-item"  href="#home">Inicio</a>
-                    </li>
-    
-                    <li class="mobile_nav-item">
-                        <a  class="nav-item"  href="#sobre">Sobre o produto</a>
-                    </li>
-                    
-                    <li class="mobile_nav-item">
-                        <a class="nav-item"  href="#evento">Sobre o evento</a>
-                    </li>
-    
-                    <li class="mobile_nav-item">
-                        <a class="nav-item" href="#parcerias">Parcerias</a>
-                    </li>
-                </ul>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="mobile_nav-item">
+                    <a class="nav-item"  href="#home">Inicio</a>
+                </li>
 
-                <button>
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
+                <li class="mobile_nav-item">
+                    <a  class="nav-item"  href="#sobre">Sobre o produto</a>
+                </li>
+                
+                <li class="mobile_nav-item">
+                    <a class="nav-item"  href="#evento">Sobre o evento</a>
+                </li>
+
+                <li class="mobile_nav-item">
+                    <a class="nav-item" href="#parcerias">Parcerias</a>
+                </li>
+            </ul>
+        </div>
     </header>
-    <div>
-    
+
+    <main id="content">
+        <section id="home">
+            <div id="shape"></div>
+            <div id="cta">
+                <p class="single-color">Almy Protein</p>
+                <p class="gradient">A sua barrinha amiga</p>
+
+                <p class="description">Desperte sua energia com nossa barra de proteína: 
+                    um snack prático, delicioso e cheio de nutrientes para impulsionar seu dia! Feita com ingredientes selecionados, 
+                    é a dose perfeita de proteínas para ajudar na recuperação muscular e manter você saciado por mais tempo.
+                </p>
+            </div>
+
+            <div id="image">
+                <img class="imagem-barrinha" src="./images/Captura_de_tela_2024-10-21_134216-removebg-preview.png " alt="barrinha de proteina da marca almy protein">
+                
+            </div>
+        </section>
+    </main>
 </body>
+    <script src="javascript/script.js"></script>
 </html>
