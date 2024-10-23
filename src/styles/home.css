@@ -1,7 +1,9 @@
 #home {
     display: flex;
-    min-height: calc(100vh - 91px);
-    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -28,14 +30,14 @@
   
     /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
     color: black;
-    
+
   }
   
   /* Não relacionado ao degradê, apenas para melhorar a visualização */
   .gradient {
-    font-size: 2rem;
+    font-size: 28px;
     font-weight: bold;
-    line-height: 1.1;
+    line-height: 1.1; 
   }
 
   .single-color {
@@ -55,9 +57,10 @@
 }
 
 #cta .description {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: justify;
     color: #6c7979;
+    font-weight: bold;
 }
 
 /*.social-medias{
@@ -85,14 +88,8 @@
 }*/
 
 
-#image {
-  display: flex;
-  align-items: start;
-  justify-content: end;
-  width: 200%;
-}
-
-#image img {
+#image{
   width: 500px;
+  height:  500px;
   box-shadow: 2px 3px 4px (to bottom, rebeccapurple, #22d3e9, #4708e7); /* sombra */
 }
