@@ -1,95 +1,94 @@
 #home {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+  display: flex;
+  min-height: calc(100vh - 91px);
 }
 
 
 
 
 .single-color {
-    background-image: linear-gradient(to bottom, rebeccapurple, #22d3e9, #4708e7);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  /* Agora, colocando um degradê */
-  .gradient {
-    /* Primeiro passo: definir um degradê como fundo */
-    background-image: linear-gradient(to bottom, rebeccapurple, #22d3e9, #4708e7);
-    
-    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
-    background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
-  
-    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
-    -webkit-text-fill-color: transparent;
-  
-    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
-    color: black;
-
-  }
-  
-  /* Não relacionado ao degradê, apenas para melhorar a visualização */
-  .gradient {
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 1.1; 
-  }
-
-  .single-color {
-    font-size: 4rem;
-    font-weight: bold;
-    line-height: 1.1;
+  background-image: linear-gradient(to bottom, rgba(147,53,228,1), #6495ED, #22D3E9  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 73px;
+  font-weight: bold;
+  line-height: 1.1;
 }
 
+/* Agora, colocando um degradê */
+.gradient {
+  /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to bottom, rebeccapurple, #6495ED, #22D3E9);
+
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  padding-bottom: 1%;
+}
 
 
 #cta {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  margin-top: 5%;
+width: 35%;
+display: flex;
+flex-direction: column;
+gap: 28px;
+margin-top: 5%;
 }
 
 #cta .description {
-    font-size: 0.8rem;
-    text-align: justify;
-    color: #6c7979;
-    font-weight: bold;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+
+#box{
+  background-color: #576f8f77;
+  padding: 32px;
+  padding-top: 24px;
+  border-radius: 8px;
 }
 
 /*.social-medias{
-  display: flex;
-  gap: 18px;
+display: flex;
+gap: 18px;
 }
-
 .social-media-buttons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 40px;
-  background-color: #fff;
-  font-size: 1.25rem;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #1d1d1dad;
-  box-shdow: 0px 0px 12px 4px rgba(0,0,0,0.1);
-  transition: box-shadow .3s ease;
-
+display: flex;
+align-items: center;
+justify-content: center;
+width: 45px;
+height: 40px;
+background-color: #fff;
+font-size: 1.25rem;
+border-radius: 10px;
+text-decoration: none;
+color: #1d1d1dad;
+box-shdow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+transition: box-shadow .3s ease;
 .social-medias-butons {
-  box-shdow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+box-shdow: 0px 0px 12px 4px rgba(0,0,0,0.1);
 }
 }*/
 
 
-#image{
-  width: 500px;
-  height:  500px;
-  box-shadow: 2px 3px 4px (to bottom, rebeccapurple, #22d3e9, #4708e7); /* sombra */
+#image {
+display: flex;
+align-items: start;
+justify-content: center;
+width: 70%;
+}
+
+#image .imagem-barrinha{
+height: 600px;
+width: fit-content;
 }
