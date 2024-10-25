@@ -51,6 +51,10 @@ background: linear-gradient(90deg, rgba(147,53,228,1) 35%, rgba(0,212,255,1) 100
     #nav_list {
         display: none;
     }
+    
+    #navbar {
+        height: 40px;
+    }
 
     #mobile-btn {
         display: block;
