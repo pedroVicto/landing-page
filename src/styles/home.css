@@ -100,12 +100,13 @@ width: fit-content;
 
   }
   
+  
   #image .imagem-barrinha {
     display: none;
   }
 
   #cta {
-    width: 100%;
+    width: 70%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -117,5 +118,11 @@ width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #cta .single-color {
+      font-size: 45px;
   }
 }
