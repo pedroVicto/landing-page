@@ -1,9 +1,10 @@
 #home {
   display: flex;
   min-height: calc(100vh - 91px);
+  text-align: center;
+  flex-direction: column; 
+  align-items: center;
 }
-
-
 
 
 .single-color {
@@ -13,7 +14,10 @@
   -webkit-text-fill-color: transparent;
   font-size: 73px;
   font-weight: bold;
+  display: flex;
   line-height: 1.1;
+  text-align: center;
+  align-items: center;
 }
 
 /* Agora, colocando um degradê */
@@ -39,11 +43,13 @@
 
 
 #cta {
-width: 35%;
-display: flex;
-flex-direction: column;
-gap: 28px;
-margin-top: 5%;
+  width: 50%;
+  gap: 28px;
+  display: flex;
+  flex-direction: column; /* Adiciona flex-direction para empilhar itens */
+  align-items: center; /* Centraliza o conteúdo do cta */
+  justify-content: center; /* Centraliza verticalmente */
+  margin-top: 5%; /* Mantém um espaço superior */
 }
 
 #cta .description {
@@ -51,7 +57,13 @@ margin-top: 5%;
   color: #FFFFFF;
 }
 
-#box{
+#container {
+  display: flex; /* Altera para flex para melhor controle de alinhamento */
+  flex-direction: column; /* Empilha os elementos dentro do container */
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+#box {
   background-color: #576f8f77;
   padding: 32px;
   padding-top: 24px;
@@ -94,28 +106,29 @@ width: fit-content;
 }
 
 @media screen and (max-width: 1170px) {
-  #home  {
+  #home {
     min-height: 100%;
-    padding-top: 0px;
-
+    padding-top: 0;
+    flex-direction: column; /* Altera a direção para coluna em telas menores */
   }
-  
-  
+
   #image .imagem-barrinha {
-    display: none;
+    display: none; /* Esconde a imagem em telas menores */
   }
 
   #cta {
     width: 70%;
     text-align: center;
     display: flex;
+    flex-direction: column; /* Empilha itens em coluna */
     align-items: center;
     justify-content: center;
-
+    margin: 0 auto; /* Centraliza horizontalmente */
   }
 
-  #content  {
+  #content {
     display: flex;
+    flex-direction: column; /* Altera para coluna */
     align-items: center;
     justify-content: center;
   }
@@ -123,6 +136,42 @@ width: fit-content;
 
 @media screen and (max-width: 760px) {
   #cta .single-color {
-      font-size: 45px;
+    font-size: 45px; /* Ajusta o tamanho da fonte */
+  }
+
+  #cta {
+    width: 90%; /* Ajusta a largura do CTA */
+  }
+
+  #container {
+    padding: 16px; /* Diminui o padding do container */
+  }
+
+  #box {
+    padding: 20px; /* Ajusta o padding do box */
+  }
+
+  #cta .description {
+    font-size: 1rem; /* Ajusta o tamanho da descrição */
+  }
+
+  #image .imagem-barrinha {
+    display: block; /* Mostra a imagem em telas muito pequenas, se necessário */
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #cta .single-color {
+    font-size: 35px; /* Reduz ainda mais o tamanho da fonte */
+  }
+
+  #cta .description {
+    font-size: 0.9rem; /* Reduz o tamanho da descrição */
+  }
+
+  #cta {
+    width: 95%; /* Ajusta a largura do CTA para telas muito pequenas */
   }
 }
