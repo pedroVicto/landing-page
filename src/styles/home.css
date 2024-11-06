@@ -55,6 +55,7 @@
 #cta .description {
   font-size: 1.2rem;
   color: #FFFFFF;
+  margin-top: 15px;
 }
 
 #container {
@@ -97,12 +98,13 @@ box-shdow: 0px 0px 12px 4px rgba(0,0,0,0.1);
 display: flex;
 align-items: start;
 justify-content: center;
-width: 70%;
+width: 60%;
+margin-top: 20px;
 }
 
 #image .imagem-barrinha{
-height: 600px;
-width: fit-content;
+height: 60%;
+width: 60%;
 }
 
 @media screen and (max-width: 1170px) {
@@ -113,7 +115,9 @@ width: fit-content;
   }
 
   #image .imagem-barrinha {
-    display: none; /* Esconde a imagem em telas menores */
+    display: block; /* Mostra a imagem em telas muito pequenas, se necessário */
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
   }
 
   #cta {
@@ -123,7 +127,7 @@ width: fit-content;
     flex-direction: column; /* Empilha itens em coluna */
     align-items: center;
     justify-content: center;
-    margin: 0 auto; /* Centraliza horizontalmente */
+    margin: 0 auto;/* Centraliza horizontalmente */
   }
 
   #content {
@@ -157,8 +161,7 @@ width: fit-content;
 
   #image .imagem-barrinha {
     display: block; /* Mostra a imagem em telas muito pequenas, se necessário */
-    width: 100%; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%; /* Define a largura da imagem */ /* Mantém a proporção da imagem */
   }
 }
 
