@@ -1,0 +1,32 @@
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Ocupa a altura total da janela */
+    text-align: center; /* Centraliza o texto */
+}
+
+#title {
+    font-size: 20px;
+    text-align: center; /* Centraliza o título */
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px blue;
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    padding: 10px 20px; /* Ajuste para centralizar melhor */
+    cursor: pointer;
+    margin-top: 45px;
+}
+
+.botao:hover {
+    background-color: darkblue;
+    transform: scale(1.2);
+}
