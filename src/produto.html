@@ -3,10 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/produto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="styles/tab-nutri.css">
+    <link rel="stylesheet" href="styles/produto.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Nosso Porudto</title>
 </head>
 <body>
-  <h1>Nosso Produto</h1>
+  <header>
+    <nav id="navbar">
+            <img src="images/logo.png" alt="logo Almy protein" width="170" height="100">
+
+        <ul id="nav_list">
+            <li class="nav-item">
+                <a  class="nav-item"  href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item" href="./produto.html">Sobre o produto</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-item" href="#evento">Sobre o evento</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item" href="#parcerias">Parcerias</a>
+            </li>
+        </ul>
+
+        <button id="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="mobile_nav-item">
+                    <a class="nav-item"  href="./index.html">Inicio</a>
+                </li>
+
+                <li class="mobile_nav-item">
+                    <a  class="nav-item"  href="./produto.html">Sobre o produto</a>
+                </li>
+
+                <li class="mobile_nav-item">
+                    <a class="nav-item"  href="#evento">Sobre o evento</a>
+                </li>
+
+                <li class="mobile_nav-item">
+                    <a class="nav-item" href="#parcerias">Parcerias</a>
+                </li>
+            </ul>
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="mobile_nav-item">
+                <a class="nav-item"  href="#home">Inicio</a>
+            </li>
+
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+  </header>
+
+  <h1 class="product">Nosso Produto</h1>
+
+  <p class="product-sob">
+    Nossa barra de proteína foi desenvolvida com base em pesquisas e consultoria de profissionais de nutrição, garantindo que cada ingrediente escolhido contribua para a saúde e o bem-estar dos estudantes. Enfrentar longas jornadas de estudo exige energia e foco contínuos, e, para isso, elaboramos uma fórmula que não só oferece uma suplementação alimentar prática, mas também mantém o equilíbrio nutricional necessário para um bom desempenho acadêmico.
+    Muitos alunos encontram dificuldades para seguir uma alimentação saudável durante o período de estudos, o que pode afetar sua disposição e rendimento. Pensando nisso, selecionamos cuidadosamente ingredientes que, além de nutritivos, trazem benefícios específicos à saúde, como controle do apetite e melhora dos níveis de energia, sem recorrer a opções processadas e ricas em açúcares.
+    Com a orientação de especialistas, criamos uma barra que oferece os nutrientes essenciais, proporcionando uma alternativa saudável e funcional para quem precisa manter o foco nos estudos e cuidar da saúde ao mesmo tempo.
+  </p>
+
+  <img class="img-product" src="./images/produto.jfif" alt="">
+
+
 </body>
+  <script src="javascript/script.js"></script>
 </html>
