@@ -1,16 +1,38 @@
 body {
     background-color: #090130;
+    font-family: 'Poppins', sans-serif;
 }
 
 .product {
     color: #ffff;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(147,53,228,1), #6495ED, #22D3E9  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .product-sob {
     text-align: center;
+    font-size: 18px;
 }
 
+#box {
+    background-color: #576f8f77;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+}
+
+.img-product {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
 
 
