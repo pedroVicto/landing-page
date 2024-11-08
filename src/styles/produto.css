@@ -1,42 +1,222 @@
+/* Geral */
 body {
     background-color: #090130;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Título do Produto */
 .product {
     color: #ffff;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to bottom, rgba(147,53,228,1), #6495ED, #22D3E9  );
+    background-image: linear-gradient(to bottom, rgba(147, 53, 228, 1), #6495ED, #22D3E9);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    padding-top: 20px;
 }
 
+/* Descrição do Produto */
 .product-sob {
     text-align: center;
     font-size: 18px;
+    padding: 0 15px;
 }
 
+/* Caixa de descrição do produto */
 #box {
     background-color: #576f8f77;
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
-    width: fit-content;
-    margin-left: 30px;
-    margin-right: 30px;
-
+    width: 50%;
+    margin: 25px auto;
 }
 
+/* Imagem do Produto */
 .img-product {
     display: flex;
     justify-content: center;
     border-radius: 30px;
-    margin: 0 auto;
+    margin: 25px auto;
     margin-bottom: 50px;
-    margin-top: 25px;
-
+    width: 50%;
 }
 
+/* Tabela de Ingredientes */
+#tab-nutri {
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Responsividade para Tamanho de Tela Médio (Tablets) */
+@media (max-width: 768px) {
+    .product {
+        font-size: 1.5rem;
+        padding-top: 15px;
+    }
+
+    #box {
+        width: 80%;
+    }
+
+    .product-sob {
+        font-size: 16px;
+    }
+
+    .img-product {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    /* Ajuste na lista de ingredientes */
+    #images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .tab1, .tab2, .tab3, .tab4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsividade para Tamanho de Tela Pequeno (Smartphones) */
+@media (max-width: 480px) {
+    .product {
+        font-size: 1.2rem;
+        padding-top: 10px;
+    }
+
+    #box {
+        width: 90%;
+    }
+
+    .product-sob {
+        font-size: 14px;
+    }
+
+    .img-product {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Ajuste na lista de ingredientes */
+    #images {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tab1, .tab2, .tab3, .tab4 {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    /* Ajustar o Navbar para Mobile */
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #mobile-btn {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    #mobile_menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    #mobile_nav_list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #mobile_nav_list li {
+        margin: 15px 0;
+    }
+
+    #mobile_nav_list a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    /* Mostrar o menu móvel ao clicar */
+    #mobile-btn.active + #mobile_menu {
+        display: block;
+    }
+}
+
+/* Responsividade do Navbar para Mobile */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav_list li {
+    margin: 0 15px;
+}
+
+#nav_list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#mobile-btn {
+    display: none;
+}
+
+/* Mobile: mostrar o botão para abrir o menu */
+@media (max-width: 768px) {
+    #mobile-btn {
+        display: block;
+    }
+
+    #nav_list {
+        display: none;
+    }
+}
 
