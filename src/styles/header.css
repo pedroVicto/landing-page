@@ -1,26 +1,25 @@
+/* Estilos gerais do cabeçalho */
 header {
     width: 100%;
     padding: 30px 8%;
     background: rgb(147,53,228);
-background: linear-gradient(90deg, rgba(147,53,228,1) 35%, rgba(0,212,255,1) 100%);
-
+    background: linear-gradient(90deg, rgba(147,53,228,1) 35%, rgba(0,212,255,1) 100%);
 }
 
+/* Navbar */
 #navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
+/* Menu Desktop */
 #nav_list {    
     display: flex;
     list-style: none;
     gap: 48px;
     font-size: 1.2rem;
-
 }
 
 .nav-item {
@@ -32,24 +31,33 @@ background: linear-gradient(90deg, rgba(147,53,228,1) 35%, rgba(0,212,255,1) 100
 .nav-item:hover {
     color: #6c7979;
 }
-.mobile_nav-item {
-    list-style: none;
-}
 
+/* Ícone do Menu Mobile */
 #mobile-btn {
     display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
+/* Menu Mobile */
 #mobile_menu {
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
+.mobile_nav-item {
+    list-style: none;
+    text-align: center;
+    margin: 8px 0;
+}
 
-
-
+/* Estilos responsivos */
 @media screen and (max-width: 1170px) {
     #nav_list {
-        display: none;
+        display: none; /* Esconde o menu desktop em telas menores */
     }
     
     #navbar {
@@ -57,31 +65,34 @@ background: linear-gradient(90deg, rgba(147,53,228,1) 35%, rgba(0,212,255,1) 100
     }
 
     #mobile-btn {
-        display: block;
-        border: none;
-        background-color: transparent;
-        font-size: 1.5rem;
-        cursor: pointer;
+        display: block; /* Mostra o ícone do menu no mobile */
     }
+}
 
-    #mobile_nav_list {
-        display: none;
-    }
-
-    #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin: 12px 0px;
+@media screen and (max-width: 768px) {
+    /* Ajustes para dispositivos médios */
+    header {
+        padding: 20px 5%;
     }
 
     #mobile_menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex; /* Exibe o menu mobile */
+        gap: 12px;
+        padding: 10px 0;
     }
 
     .mobile_nav-item {
-        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes para dispositivos pequenos */
+    header {
+        padding: 15px 4%;
+    }
+
+    .mobile_nav-item {
+        font-size: 1rem;
     }
 }

@@ -1,0 +1,12 @@
+h1 {
+    padding: 25px;
+}
+
+p {
+    margin-left: 40px;
+    display: flex;
+}
+
+body {
+    margin-bottom: 50px;
+}

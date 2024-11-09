@@ -19,6 +19,8 @@
   text-align: center;
   align-items: center;
   flex-direction: row;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* Agora, colocando um degradê */
@@ -44,7 +46,7 @@
 
 
 #cta {
-  width: 50%;
+  width: 80%;
   gap: 28px;
   display: flex;
   flex-direction: column; /* Adiciona flex-direction para empilhar itens */
@@ -138,6 +140,8 @@ width: 60%;
     align-items: center;
     justify-content: center;
   }
+
+
 }
 
 @media screen and (max-width: 760px) {
@@ -154,7 +158,8 @@ width: 60%;
   }
 
   #box {
-    padding: 20px; /* Ajusta o padding do box */
+    padding: 20px;
+    width: 70%; /* Ajusta o padding do box */
   }
 
   #cta .description {
@@ -179,4 +184,6 @@ width: 60%;
   #cta {
     width: 95%; /* Ajusta a largura do CTA para telas muito pequenas */
   }
+
+  
 }
